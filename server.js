@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
 	res.send('okely dokely')
 })
 //app.use(express.static(path.join(__dirname, 'public')));
-app.listen('3000', () => console.log('listening. . . .'))
+app.listen(process.env.PORT || 5000, () => console.log('listening. . . .'))
